@@ -74,6 +74,26 @@
           "indexType": "TBI"
         }
       }
+    },
+    {
+      "type": "VariantTrack",
+      "trackId": "variants.vcf",
+      "name": "variants.vcf",
+      "assemblyNames": [
+        "NC_045512.fna.gz"
+      ],
+      "adapter": {
+        "type": "VcfTabixAdapter",
+        "vcfGzLocation": {
+          "uri": "variants.vcf.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "variants.vcf.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
     }
   ]
 }
