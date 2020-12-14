@@ -1,0 +1,79 @@
+{
+  "assemblies": [
+    {
+      "name": "NC_045512.fna.gz",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "NC_045512.fna.gz-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "NC_045512.fna.gz"
+          },
+          "faiLocation": {
+            "uri": "NC_045512.fna.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "NC_045512.fna.gz.gzi"
+          }
+        }
+      }
+    }
+  ],
+  "configuration": {},
+  "connections": [],
+  "defaultSession": {
+    "name": "New Session"
+  },
+  "tracks": [
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "SRR11140748",
+      "name": "SRR11140748",
+      "assemblyNames": [
+        "NC_045512.fna.gz"
+      ],
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "SRR11140748.cram"
+        },
+        "craiLocation": {
+          "uri": "SRR11140748.cram.crai"
+        },
+        "sequenceAdapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "NC_045512.fna.gz"
+          },
+          "faiLocation": {
+            "uri": "NC_045512.fna.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "NC_045512.fna.gz.gzi"
+          }
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "NC_045512.sorted.gff",
+      "name": "NC_045512.sorted.gff",
+      "assemblyNames": [
+        "NC_045512.fna.gz"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "NC_045512.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "NC_045512.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    }
+  ]
+}
